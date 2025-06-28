@@ -1,3 +1,20 @@
+# Deploy to GitHub Pages
+
+1. Make sure your repository is pushed to GitHub.
+2. Run the following command to build and deploy your site:
+
+```bash
+npm run deploy
+```
+
+This will build your Next.js app, export it as static files, and publish the `out` directory to the `gh-pages` branch using the `gh-pages` package.
+
+3. In your GitHub repository settings, set GitHub Pages to serve from the `gh-pages` branch (root).
+
+For more details, see [GitHub Pages documentation](https://pages.github.com/).
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
