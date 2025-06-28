@@ -1,13 +1,46 @@
-# Deploy to GitHub Pages
+# Automated Deployment
 
-1. Make sure your repository is pushed to GitHub.
-2. Run the following command to build and deploy your site:
+Your site is now configured for automated deployment to GitHub Pages! Here are the available commands:
+
+## Quick Deployment (Recommended)
 
 ```bash
 npm run deploy
 ```
 
-This will build your Next.js app, export it as static files, and publish the `out` directory to the `gh-pages` branch using the `gh-pages` package.
+This will:
+
+1. Build your Next.js app with static export
+2. Deploy the `out` directory to GitHub Pages
+
+## Available Scripts
+
+- **`npm run deploy`** - Quick build and deploy (recommended for most updates)
+- **`npm run deploy:quick`** - Same as above (alias)
+- **`npm run deploy:full`** - Lint, build, and deploy (for thorough checks)
+- **`npm run clean`** - Remove build artifacts (out and .next directories)
+- **`npm run rebuild`** - Clean and rebuild from scratch
+
+## Development Workflow
+
+1. Make your code changes
+2. Test locally with `npm run dev`
+3. Deploy with `npm run deploy`
+
+That's it! Your site will be automatically updated at https://fiimai.github.io
+
+---
+
+# Deploy to GitHub Pages
+
+1. Make sure your repository is pushed to GitHub.
+2. Run the following command to build and deploy your site:
+
+   ```bash
+   npm run deploy
+   ```
+
+   This will build your Next.js app, export it as static files, and publish the `out` directory to the `gh-pages` branch using the `gh-pages` package.
 
 3. In your GitHub repository settings, set GitHub Pages to serve from the `gh-pages` branch (root).
 

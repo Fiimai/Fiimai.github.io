@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export", // Enable static export for GitHub Pages
+  trailingSlash: true, // Add trailing slashes for GitHub Pages
+  skipTrailingSlashRedirect: true,
+  distDir: 'out',
   images: {
     unoptimized: true,
     domains: [

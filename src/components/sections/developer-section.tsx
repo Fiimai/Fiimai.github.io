@@ -4,7 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ArrowRight, ArrowUpRight, Check } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, cubicBezier } from "framer-motion";
 
 // Sample health program implementations for different departments
 const programExamples = {
@@ -124,10 +124,11 @@ const healthFeatures = [
   },
 ];
 
+const easing = cubicBezier(0.42, 0, 0.58, 1); // easeInOut equivalent
 const peelVariants = {
   initial: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1 },
-  animate: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1, transition: { duration: 0.8, ease: "easeInOut" } },
-  exit: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } },
+  animate: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1, transition: { duration: 0.8, ease: easing } },
+  exit: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", opacity: 0, transition: { duration: 0.8, ease: easing } },
 };
 
 export function DeveloperSection() {

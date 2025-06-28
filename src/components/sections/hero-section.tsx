@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, cubicBezier } from "framer-motion";
 import Link from "next/link";
 
+const easing = cubicBezier(0.42, 0, 0.58, 1); // easeInOut equivalent
 const peelVariants = {
   initial: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
@@ -15,12 +16,12 @@ const peelVariants = {
   animate: {
     clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
     opacity: 1,
-    transition: { duration: 0.8, ease: "easeInOut" },
+    transition: { duration: 0.8, ease: easing },
   },
   exit: {
     clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
     opacity: 0,
-    transition: { duration: 0.8, ease: "easeInOut" },
+    transition: { duration: 0.8, ease: easing },
   },
 };
 

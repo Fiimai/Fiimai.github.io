@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, cubicBezier } from "framer-motion";
 
 const testimonials = [
 	{
@@ -67,10 +67,11 @@ const partnerLogos = [
 	{ id: "logo-6", src: "https://placehold.co/128x40?text=Logo6", alt: "Partner logo 6" },
 ];
 
+const easing = cubicBezier(0.42, 0, 0.58, 1); // easeInOut equivalent
 const peelVariants = {
 	initial: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1 },
-	animate: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1, transition: { duration: 0.8, ease: "easeInOut" } },
-	exit: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", opacity: 0, transition: { duration: 0.8, ease: "easeInOut" } },
+	animate: { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)", opacity: 1, transition: { duration: 0.8, ease: easing } },
+	exit: { clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)", opacity: 0, transition: { duration: 0.8, ease: easing } },
 };
 
 export function TestimonialsSection() {

@@ -3,10 +3,21 @@
 import { useRef, useEffect, useState } from "react";
 import { Check, X, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
-import { motion, AnimatePresence } from "framer-motion";
+import {
+	HoverCard,
+	HoverCardContent,
+	HoverCardTrigger,
+} from "@/components/ui/hover-card";
+import { motion, AnimatePresence, cubicBezier } from "framer-motion";
 
 const plans = [
 	{
@@ -183,6 +194,7 @@ const comparisonFeatures = [
 	},
 ];
 
+const easing = cubicBezier(0.42, 0, 0.58, 1); // easeInOut equivalent
 const peelVariants = {
 	initial: {
 		clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
@@ -191,12 +203,12 @@ const peelVariants = {
 	animate: {
 		clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
 		opacity: 1,
-		transition: { duration: 0.8, ease: "easeInOut" },
+		transition: { duration: 0.8, ease: easing },
 	},
 	exit: {
 		clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
 		opacity: 0,
-		transition: { duration: 0.8, ease: "easeInOut" },
+		transition: { duration: 0.8, ease: easing },
 	},
 };
 
