@@ -16,9 +16,18 @@
 # next.js
 /.next/
 /out/
+/_next/
 
 # production
 /build
+
+# deployment output (should not be in main)
+404.html
+index.html
+gallery/
+test/
+test-page/
+.nojekyll
 
 # misc
 .DS_Store
@@ -38,4 +47,3 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
