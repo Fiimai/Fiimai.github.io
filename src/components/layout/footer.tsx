@@ -22,16 +22,25 @@ const healthServicesLinks = [
 ];
 
 const facilitiesLinks = [
-	{ name: "Health Centers", href: "#" },
-	{ name: "CHPS Compounds", href: "#" },
-	{ name: "Clinic Locations", href: "#" },
-	{ name: "Hospital Services", href: "#" },
-	{ name: "Mobile Clinics", href: "#" },
-	{ name: "Community Outreach", href: "#" },
-	{ name: "Health Posts", href: "#" },
-	{ name: "Specialized Care", href: "#" },
-	{ name: "Rehabilitation", href: "#" },
-	{ name: "Pharmacy Services", href: "#" },
+	{ name: "Kaase Health Centre", href: "#" },
+	{ name: "Amadu Nkwanta CHPS", href: "#" },
+	{ name: "Fosukrom CHPS", href: "#" },
+	{ name: "Kwasare CHPS", href: "#" },
+	{ name: "Asemnyinakrom Health Centre", href: "#" },
+	{ name: "Sebebia CHPS", href: "#" },
+	{ name: "Atuakrom CHPS", href: "#" },
+	{ name: "Arhinful CHPS", href: "#" },
+	{ name: "Amangoase CHPS", href: "#" },
+	{ name: "Massakrim CHPS", href: "#" },
+	{ name: "Asoredanho CHPS", href: "#" },
+	{ name: "Owonta CHPS", href: "#" },
+	{ name: "Camp Junction CHPS", href: "#" },
+	{ name: "Achiase CHPS", href: "#" },
+	{ name: "Kofi Yeboah CHPS", href: "#" },
+	{ name: "Camp 15 CHPS", href: "#" },
+	{ name: "Ahimakrom CHPS", href: "#" },
+	{ name: "Royal Christ Care Hospital", href: "#" },
+	{ name: "Adabokrom Health Centre", href: "#" },
 ];
 
 const aboutLinks = [

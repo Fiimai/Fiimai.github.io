@@ -76,7 +76,7 @@ surveillance_system = {
   systems: `// Health Information Management
 class HealthInfoSystem {
   constructor() {
-    this.facilities = 16;
+    this.facilities = 19; // Updated to reflect all facilities under the directorate
     this.data_points = [
       "Patient registrations",
       "Service delivery statistics",

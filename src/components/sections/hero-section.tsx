@@ -155,12 +155,25 @@ export function HeroSection() {
               </p>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                 {[
-                  "Adabokrom CHPS",
-                  "Ahenikrom CHPS",
-                  "Asanteman CHPS",
+                  "Kaase Health Centre",
+                  "Amadu Nkwanta CHPS",
+                  "Fosukrom CHPS",
+                  "Kwasare CHPS",
+                  "Asemnyinakrom Health Centre",
+                  "Sebebia CHPS",
+                  "Atuakrom CHPS",
+                  "Arhinful CHPS",
+                  "Amangoase CHPS",
+                  "Massakrim CHPS",
+                  "Asoredanho CHPS",
+                  "Owonta CHPS",
+                  "Camp Junction CHPS",
+                  "Achiase CHPS",
+                  "Kofi Yeboah CHPS",
                   "Camp 15 CHPS",
-                  "Yawmatwa CHPS",
-                  "Nkrankrom CHPS",
+                  "Ahimakrom CHPS",
+                  "Royal Christ Care Hospital",
+                  "Adabokrom Health Centre",
                 ].map((facility) => (
                   <div
                     key={facility}

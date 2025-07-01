@@ -130,7 +130,7 @@ const features = [
 			{
 				id: "systems-1",
 				title: "Facility management",
-				description: "Supervision and support for 16 health facilities.",
+				description: "Supervision and support for 19 health facilities under the directorate: Kaase Health Centre, Amadu Nkwanta CHPS, Fosukrom CHPS, Kwasare CHPS, Asemnyinakrom Health Centre, Sebebia CHPS, Atuakrom CHPS, Arhinful CHPS, Amangoase CHPS, Massakrim CHPS, Asoredanho CHPS, Owonta CHPS, Camp Junction CHPS, Achiase CHPS, Kofi Yeboah CHPS, Camp 15 CHPS, Ahimakrom CHPS, Royal Christ Care Hospital, Adabokrom Health Centre.",
 			},
 			{
 				id: "systems-2",

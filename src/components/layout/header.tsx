@@ -17,13 +17,26 @@ import { ThemeToggle } from "@/components/theme/theme-toggle";
 import { motion } from "framer-motion";
 import ghsLogo from "../../../images/ghs-official.png";
 
-const facilitiesItems = [
-  { title: "Facility 1", description: "Primary Health Center" },
-  { title: "Facility 2", description: "Community Clinic" },
-  { title: "Facility 3", description: "Maternity Home" },
-  { title: "Facility 4", description: "CHPS Compound" },
-  { title: "Facility 5", description: "Health Post" },
-  { title: "Facility 6", description: "Outreach Point" },
+const facilitiesItems: { title: string; description: string }[] = [
+  { title: "Kaase Health Centre", description: "Health Centre" },
+  { title: "Amadu Nkwanta CHPS", description: "CHPS Compound" },
+  { title: "Fosukrom CHPS", description: "CHPS Compound" },
+  { title: "Kwasare CHPS", description: "CHPS Compound" },
+  { title: "Asemnyinakrom Health Centre", description: "Health Centre" },
+  { title: "Sebebia CHPS", description: "CHPS Compound" },
+  { title: "Atuakrom CHPS", description: "CHPS Compound" },
+  { title: "Arhinful CHPS", description: "CHPS Compound" },
+  { title: "Amangoase CHPS", description: "CHPS Compound" },
+  { title: "Massakrim CHPS", description: "CHPS Compound" },
+  { title: "Asoredanho CHPS", description: "CHPS Compound" },
+  { title: "Owonta CHPS", description: "CHPS Compound" },
+  { title: "Camp Junction CHPS", description: "CHPS Compound" },
+  { title: "Achiase CHPS", description: "CHPS Compound" },
+  { title: "Kofi Yeboah CHPS", description: "CHPS Compound" },
+  { title: "Camp 15 CHPS", description: "CHPS Compound" },
+  { title: "Ahimakrom CHPS", description: "CHPS Compound" },
+  { title: "Royal Christ Care Hospital", description: "Hospital" },
+  { title: "Adabokrom Health Centre", description: "Health Centre" },
   // ...add up to 16 as needed
 ];
 
